@@ -1,0 +1,60 @@
+UI Automation framework is divided into three layers
+1. Page objects
+2. Utilities
+3. Testcases
+
+All the layers are present under three different packages.
+
+We have used POM and page factory to create the framework.
+Page objects layer contain 4 classes
+1. BlazeHomePage
+2. BlazeChooseFlightPage
+3. BlazeFlightPurchasePage
+4. BlazeBookingConfirmPage
+In these classes , all the objects are fetched with FindBy annotation which uses xpath , id to uniquely identify the elements.
+Behaviours are defined in methods like 
+1. click on submit button 
+2. selecting value from static dropdowns 
+3. entering data into text field
+4. selecting flight with minimum prices
+5. Fetching value from table
+
+Utility class is created to read data from excel which is then used to fill value into textfields and dropdown on first and third page.
+
+TestCases are automated in test package
+Scenarios Automated
+1. End to end flow is automated to verify if flight is booked successfully 
+
+Scenarios which can be automated but not automated because of various reasons
+UI 
+1. Verify if all the spellings of the label and title of the homepage are correct
+2. Verify if scroll bar is working when data in the choose flight table is huge
+3. Verify if formating of the choose flight table is not change when name of the flight is big
+4. Verify if spelling of all the labels on the purchase flight page is correct
+5. Verify if title on all the pages is coming correctly
+6. Verify if no rows are displayed when no data is present in the choose flight page
+
+Functional
+1. Verify if link to destination of the week is working
+2. Verify if clicking on find flight opens choose flight page
+3. Verify if data is correctly populated in the drop downs
+4. Verify if all the choose flight buttons are working properly
+5. Verify if user can click back button on any page and proper error is message is visible on screen
+6. Verify if user can select same destination and departure city
+7. Verify if user can select 2 flight at same time
+8. Verify that two users are not able to book same flight incase only one seat is left
+8. Verify if user can enter number in the name field of purchase flight page
+9. Verify if user can enter special characters in any of the fields
+10. Verify if user can provide past date of card expiry
+11. Verify if user can leave fields blank and book the flight
+12. Verify if total price calculated is displayed correctly on the  purchase flight page
+13. Verify if airline name is correctly displayed on purchase flight page
+14. Verify if user can enter alphabets in zipcode field of purchase page
+15. Verify if user can enter negative number in any field of numbers on purchase page
+16. Verify if user can enter month greater than 12 on purchase pag
+17. Verify if data is correctly displayed on the confirmation page like valid status code is populated
+correct date is populated
+card number is correct
+Expiration date is correct
+Total amount is correct
+ 
