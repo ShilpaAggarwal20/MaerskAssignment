@@ -30,7 +30,7 @@ public class BaseTest {
 		driver.get("https://blazedemo.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
-		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().pageLoadTimeout(1000, TimeUnit.MILLISECONDS);
 	}
 	
 	
