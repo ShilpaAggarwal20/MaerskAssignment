@@ -18,8 +18,8 @@ public class BaseTest {
 	@BeforeTest
 	public void setUpMethod(@Optional("chrome") String browser) {
 
-		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/googlechrome.exe");
-		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		driver = new ChromeDriver();
