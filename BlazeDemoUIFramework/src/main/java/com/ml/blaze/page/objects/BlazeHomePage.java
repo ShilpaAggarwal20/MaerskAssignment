@@ -34,7 +34,7 @@ WebDriver driver;
 		destSelect.selectByValue(destCity);
 	}
 	
-	public void submitBtn() {
+	public void submitFlightBtn() {
 		findFlightBtn.submit();
 	}
 }
