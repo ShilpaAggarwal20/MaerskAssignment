@@ -1,9 +1,12 @@
 package com.ml.blaze.page.objects;
 
+import java.util.HashMap;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class BlazeFlightPurchasePage {
 
@@ -47,5 +50,22 @@ WebDriver driver;
 	@FindBy(xpath="//input[@class='btn btn-primary']")
 	WebElement purchaseFlightBtn;
 	
+	public void fillPurchaseFlightFields(HashMap<String,String> purchaseDataMap) {
+		
+		nameTextFld.sendKeys(purchaseDataMap.get("Name"));
+		addressTextFld.sendKeys(purchaseDataMap.get("Address"));
+		cityTextFld.sendKeys(purchaseDataMap.get("City"));
+		stateTextFld.sendKeys(purchaseDataMap.get("State"));
+		zipCodeTextFld.sendKeys(purchaseDataMap.get("ZipCode"));
+		creditCardNumberTextFld.sendKeys(purchaseDataMap.get("Credit Card Number"));
+		creditCardMonthTextFld.sendKeys(purchaseDataMap.get("Month"));
+		creditCardYearTextFld.sendKeys(purchaseDataMap.get("Year"));
+		nameOnCardTextFld.sendKeys(purchaseDataMap.get("Name on Card"));
+		
+		Select cardDropDown =  new Select(cardTypeDropdown);
+		cardDropDown.selectByValue(purchaseDataMap.get("Card Type"));
+		
+		purchaseFlightBtn.submit();
+	}
 	
 }

@@ -41,8 +41,11 @@ public class BlazeChooseFlightPage {
 	public void chooseMinPriceFlight(double minPriceChoosen) {
 		int noOfRows = tableRows.size();
 		for(int i =0 ; i <noOfRows ; i++) {
-			if(minPriceChoosen==Double.valueOf(flightPrices.get(i).getText().replace("$", "")))
+			if(minPriceChoosen==Double.valueOf(flightPrices.get(i).getText().replace("$", ""))) {
 				chooseFlightBtn.get(i).click();
+				break;
+			}
+				
 		}	
 	}
 }
