@@ -46,7 +46,7 @@ public class BlazeTestCase extends BaseTest {
 		purchasepg.fillPurchaseFlightFields(purchaseDataMap);
 		
 		BlazeBookingConfirmPage confirmpg = new BlazeBookingConfirmPage(driver);
-	    Assert.assertEquals(confirmpg.getConfirmationID(), confirmpg.getJsonConfirmationID());
+	    Assert.assertEquals(confirmpg.getJsonConfirmationID(),confirmpg.getConfirmationID());
 	}
 	
 }
