@@ -1,0 +1,25 @@
+
+
+API testing Framework contains three layers, where each layer is present under a package.
+1. Actions package which contain methods to hit the API 
+  Input param - city and request specification
+  Returns response
+2. Utility Package which contains method to read the data from excel
+  Input param - sheet name and rownum
+  Returns response - HashMap where key is column header and value is data in columns
+3. Test Cases are present in test package
+
+Scenarios automated
+1. Verify response schema is correct
+2. Verify that data is presnt for city , temp , weather and country in the response
+3. Verify status code when api is hit with incorrect city 
+4. Verify status code when api is hit with incorrect appid 
+
+Since there was no connectivity to database so testcases where validations could be done with DB are not automated
+
+Steps to execute
+Pre-Requisities
+  Maven  should be installed in the system
+  1. Go the project folder path where pom.xml is present
+  2. execute the command 
+  mvn clean test
