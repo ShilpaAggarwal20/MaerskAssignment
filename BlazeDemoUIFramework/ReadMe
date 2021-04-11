@@ -58,3 +58,9 @@ card number is correct
 Expiration date is correct
 Total amount is correct
  
+Steps to execute
+Pre-Requisities
+  Maven  should be installed in the system
+  1. Go the project folder path where pom.xml is present
+  2. execute the command 
+  mvn clean test
