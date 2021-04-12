@@ -27,32 +27,29 @@ Scenarios Automated
 
 Scenarios which can be automated but not automated because of various reasons
 UI 
-1. Verify if all the spellings of the label and title of the homepage are correct
-2. Verify if scroll bar is working when data in the choose flight table is huge
-3. Verify if formating of the choose flight table is not change when name of the flight is big
-4. Verify if spelling of all the labels on the purchase flight page is correct
-5. Verify if title on all the pages is coming correctly
-6. Verify if no rows are displayed when no data is present in the choose flight page
+1. Verify if all the spellings of the label and title of all the pages are correct -- Can be automated
+2. Verify if scroll bar is working when data in the choose flight table is huge -- Can be automated but not automated since we dont have data to replicate the scenario and scroll bar is not present on the page
+3. Verify if formating of the choose flight table is not change when name of the flight is big --Can be automated but not automated since we dont have data to replicate the scenario
+4. Verify if no rows are displayed when no data is present in the choose flight page --Can be automated but not automated since we dont have data to replicate the scenario
 
 Functional
-1. Verify if link to destination of the week is working
-2. Verify if clicking on find flight opens choose flight page
-3. Verify if data is correctly populated in the drop downs
-4. Verify if all the choose flight buttons are working properly
-5. Verify if user can click back button on any page and proper error is message is visible on screen
-6. Verify if user can select same destination and departure city
-7. Verify if user can select 2 flight at same time
-8. Verify that two users are not able to book same flight incase only one seat is left
-8. Verify if user can enter number in the name field of purchase flight page
-9. Verify if user can enter special characters in any of the fields
-10. Verify if user can provide past date of card expiry
-11. Verify if user can leave fields blank and book the flight
-12. Verify if total price calculated is displayed correctly on the  purchase flight page
-13. Verify if airline name is correctly displayed on purchase flight page
-14. Verify if user can enter alphabets in zipcode field of purchase page
-15. Verify if user can enter negative number in any field of numbers on purchase page
-16. Verify if user can enter month greater than 12 on purchase pag
-17. Verify if data is correctly displayed on the confirmation page like valid status code is populated
+1. Verify if link to destination of the week is working -- Can be automated 
+2. Verify if clicking on find flight opens choose flight page -- Covered in end to end automation flow 
+3. Verify if data is correctly populated in the drop downs -- Can be automated but not automated since database connectivity is not there to verify the data , assuming dropdown populates from DB
+4. Verify if all the choose flight buttons are working properly -- Covered in end to end automation flow 
+5. Verify if user can click back button on any page and proper error is message is visible on screen --Can be automated
+6. Verify if user can select same destination and departure city --Can be automated but not automated because of insufficient data in dropdowns
+7. Verify that two users are not able to book same flight incase only one seat is left --Can be automated but not automated because of insufficient data
+8. Verify if user can enter number in the name field of purchase flight page--Can be automated but no validations on the page
+9. Verify if user can enter special characters in any of the fields --Can be automated but no validations on the page
+10. Verify if user can provide past date of card expiry --Can be automated but no validations on the page
+11. Verify if user can leave fields blank and book the flight --Can be automated but no validations on the page
+12. Verify if total price calculated is displayed correctly on the  purchase flight page--Can be automated but not automated because of insufficient data
+13. Verify if airline name is correctly displayed on purchase flight page --Can be automated
+14. Verify if user can enter alphabets in zipcode field of purchase page --Can be automated but no validations on the page
+15. Verify if user can enter negative number in any field of numbers on purchase page --Can be automated but no validations on the page
+16. Verify if user can enter month greater than 12 on purchase pag --Can be automated but no validations on the page
+17. Verify if data is correctly displayed on the confirmation page like valid status code is populated --Can be automated but no validations on the page
 correct date is populated
 card number is correct
 Expiration date is correct
